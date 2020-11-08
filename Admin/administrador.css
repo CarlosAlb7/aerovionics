@@ -27,7 +27,7 @@ header{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     body{
-        background-image: url(../aerovionics/administracio.png);
+        background-image: url(../Admin/administracio.png);
         background-size: 700px;
     background-repeat: no-repeat;
     position: absolute;

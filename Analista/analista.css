@@ -27,8 +27,8 @@ header{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     body{
-        background-image: url(../aerovionics/gerente.png);
-        background-size: 45%;
+        background-image: url(../Analista/analista.png);
+        background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     background-position-x: center;
@@ -37,9 +37,9 @@ header{
         width: 100%;
         margin: 0;
     }
-  
-    .gerente{
-        color: cyan;
+
+    .analista{
+        color: black;
         font-size: 30px;
         position: absolute;
        margin-left: 17em;
