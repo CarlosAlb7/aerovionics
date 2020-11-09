@@ -5,7 +5,7 @@
   $message = '';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+    $sql = "INSERT INTO ad (email, password) VALUES (:email, :password)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':email', $_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -37,7 +37,7 @@
     <h1>Registrar nuevo administrador</h1>
     <span>o <a href="loginadmin.php">Inicia Sesion</a></span>
 
-    <form action="signup.php" method="POST">
+    <form action="signupadministrador.php" method="POST">
       <input name="email" type="text" placeholder="Enter your email">
       <input name="password" type="password" placeholder="Enter your Password">
       <input name="confirm_password" type="password" placeholder="Confirm Password">

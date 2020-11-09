@@ -8,7 +8,7 @@
   require 'database.php';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $records = $conn->prepare('SELECT id, email, password FROM users WHERE email = :email');
+    $records = $conn->prepare('SELECT id, email, password FROM ad WHERE email = :email');
     $records->bindParam(':email', $_POST['email']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -41,7 +41,7 @@
     <?php endif; ?>
 
     <h1>IniciO DE SESION</h1>
-    <span>or <a href="signup.php">Registrar admin </a></span>
+    <span>or <a href="signupadministrador.php">Registrar admin </a></span>
     <a href="signupgerencia.php">Registrar gerente </a></span>
     <a href="signupanalista.php">Registrar analista </a></span>
     <a href="signupusuario.php">Registrar usuario </a></span>
