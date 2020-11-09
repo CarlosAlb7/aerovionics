@@ -40,11 +40,13 @@
       <p> <?= $message ?></p>
     <?php endif; ?>
 
-    <h1>IniciO DE SESION</h1>
-    <span>or <a href="signupadministrador.php">Registrar admin </a></span>
-    <a href="signupgerencia.php">Registrar gerente </a></span>
-    <a href="signupanalista.php">Registrar analista </a></span>
-    <a href="signupusuario.php">Registrar usuario </a></span>
+    <h1>Inicio de Sesion (Administrador)</h1>
+    <STYLE>A {text-decoration: none;} </STYLE>
+ 
+    <span  >or <a  class="admin"  href="signupadministrador.php">Registrar Admin </a></span>
+    <a href="signupgerencia.php" >Registrar Gerente </a></span>
+    <a href="signupanalista.php">Registrar Analista </a></span>
+    <a href="signupusuario.php">Registrar Usuario </a></span>
     
 
     <form action="loginadmin.php" method="POST">
